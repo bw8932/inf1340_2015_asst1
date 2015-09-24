@@ -13,5 +13,6 @@ __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
 BRADY2
+#Hey Brady, If you can read this then it means GitHub is syncing with my computer now!
 money = 1000.00
 print(money)
