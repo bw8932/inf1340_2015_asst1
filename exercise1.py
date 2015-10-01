@@ -23,7 +23,7 @@ print (share_expense)
 print (total_expense)
 
 
-#calculate the sale details
+#calculate the sale detailss
 shares_sold = 2000
 price_sold = 942.75
 sale_income = shares_sold * price_sold
