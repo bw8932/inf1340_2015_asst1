@@ -12,6 +12,7 @@ __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
 
+#test to see if pycharm is configured to push to github
 #first calculate the purchase details
 shares_bought = 2000
 price_bought = 900
