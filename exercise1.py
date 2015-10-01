@@ -40,5 +40,6 @@ print ("Lakshmi's investing netted her $%s") % (money)
 
 
 #initial copy had these lines... that's why I called her overall outcome variable "money"
+#does this mean we're to subtract that final net from a $1000 initial amount???
     #money = 1000.00
     #print(money)
