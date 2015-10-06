@@ -24,8 +24,12 @@ def name_that_shape():
     Errors:
 
     """
-
-    print("Error")
+    #initial test code to see if case of square works and error message works
+    sides=raw_input("How many sides does the shape have?")
+    if sides==("4"):
+        print("That's a square!")
+    else:
+        print("Error")
 
 
 name_that_shape()
