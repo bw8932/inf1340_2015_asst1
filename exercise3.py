@@ -25,7 +25,8 @@ def diagnose_car():
     Errors:
 
     """
-    print("We're so sorry you car isn't working. Help us diagnose the issue please respond with 'y' for Yes and 'n' for No.")
+    print("We're so sorry your car isn't working. Help us diagnose the issue - "\
+          "please respond with 'y' for Yes and 'n' for No.")
 
     print("The battery cables may be damaged. Replace cables and try again.")
 
