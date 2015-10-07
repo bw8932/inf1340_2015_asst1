@@ -24,12 +24,14 @@ def name_that_shape():
     Errors:
 
     """
-
+    #user inputs polygon's sides
     sides = int(raw_input("How many sides does the polygon have?"))
+
+    #program produces name of shape
     if sides == 1:
-        print("Line")
+        print("Not a polygon!  That is a line.")
     elif sides == 2:
-        print ("Angle")
+        print ("Not a polygon!  That is an angle.")
     elif sides == 3:
         print ("Triangle")
     elif sides == 4:
