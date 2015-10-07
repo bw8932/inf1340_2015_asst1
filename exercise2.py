@@ -17,22 +17,21 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:
+    Inputs:  1, 5, 10, 15
 
-    Expected Outputs:
+    Expected Outputs:  Error, Pentagon, Decagon, Error
+
+    Actual Outputs: Error, Pentagon, Decagon, Error
 
     Errors:
 
+    DO WE NEED TO WORRY ABOUT IF THE USER INPUTS A LETTER?
     """
     #user inputs polygon's sides
     sides = int(raw_input("How many sides does the polygon have?"))
 
-    #program produces name of shape
-    if sides == 1:
-        print("Not a polygon!  That is a line.")
-    elif sides == 2:
-        print ("Not a polygon!  That is an angle.")
-    elif sides == 3:
+    #program prints name of shape
+    if sides == 3:
         print ("Triangle")
     elif sides == 4:
         print ("Quadrangle")
@@ -41,7 +40,7 @@ def name_that_shape():
     elif sides == 6:
         print ("Hexagon")
     elif sides == 7:
-        print ("Septagon")
+        print ("Heptagon")
     elif sides == 8:
         print ("Octagon")
     elif sides == 9:
