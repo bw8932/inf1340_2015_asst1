@@ -25,7 +25,8 @@ def name_that_shape():
     Actual Outputs: Error, Error, Error, triangle, quadrilateral, pentagon, hexagon,
      heptagon, octagon, nonagon, decagon, Error, Error
 
-    Errors: None, unless user inputs letter instead of number, when it returns "invalid literal"
+    Errors: Error, Error, Error, triangle, quadrilateral, pentagon, hexagon,
+     heptagon, octagon, nonagon, decagon, Error, Error
 
     """
     # user inputs polygon's sides

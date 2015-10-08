@@ -18,9 +18,9 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: (y,y)
+    Inputs: (y,y) (n,n,n,n)
 
-    Expected Outputs: (battery terminals
+    Expected Outputs: (Clean terminals and try starting again.) (Engine is not getting enough fuel. Clean fuel pump.)
 
     Errors:
 
@@ -91,6 +91,4 @@ def diagnose_car():
             print("Improper command. Please try again. \n")
             diagnose_car()
 
-# diagnose_car()
-
-
+diagnose_car()
