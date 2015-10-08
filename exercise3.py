@@ -31,12 +31,12 @@ def diagnose_car():
 
     # Clarify required inputs for the program
     print("We're so sorry your car isn't working. Help us diagnose the issue - "
-          "please respond with 'y' for Yes and 'n' for No.")
+          "please respond with 'Y' for Yes and 'N' for No.")
 
     # Begin nested if statements
     silent = str(raw_input("Is the car silent when you turn the key? "))
 
-    if silent == "y":
+    if silent == "Y":
         corroded = str(raw_input("Are the battery terminals corroded? "))
 
         if corroded == "y":
