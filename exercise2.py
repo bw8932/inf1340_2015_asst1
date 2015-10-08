@@ -28,10 +28,10 @@ def name_that_shape():
     DO WE NEED TO WORRY ABOUT IF THE USER INPUTS A LETTER?
         I don't think so. This is some nice clean code Brady--great work!
     """
-    #user inputs polygon's sides
+    # user inputs polygon's sides
     sides = int(raw_input("How many sides does the polygon have?"))
 
-    #program prints name of shape
+    # program prints name of shape
     if sides == 3:
         print ("Triangle")
     elif sides == 4:
