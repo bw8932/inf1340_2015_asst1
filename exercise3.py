@@ -39,10 +39,10 @@ def diagnose_car():
     if silent == "Y":
         corroded = str(raw_input("Are the battery terminals corroded? "))
 
-        if corroded == "y":
+        if corroded == "Y":
             print("The battery terminals may not be conductive. Clean terminals and try starting again.")
 
-        elif corroded == "n":
+        elif corroded == "N":
             print("The battery cables may be damaged. Replace cables and try again.")
 
         # Incorrect entry to restart sequence from the beginning
@@ -50,35 +50,35 @@ def diagnose_car():
             print("Improper command. Please try again. \n")
             diagnose_car()
 
-    elif silent == "n":
+    elif silent == "N":
         clicking = str(raw_input("Does the car make a clicking noise? "))
 
-        if clicking == "y":
+        if clicking == "Y":
             print("The battery is dead. Replace the battery.")
 
-        elif clicking == "n":
+        elif clicking == "N":
             crank = str(raw_input("Does the car crank up but fail to start? "))
 
-            if crank == "y":
+            if crank == "Y":
                 print("The spark plug may be loose. Check spark plug connections.")
 
-            elif crank == "n":
+            elif crank == "N":
                 start_die = str(raw_input("Does the engine start then die? "))
 
-                if start_die == "y":
+                if start_die == "Y":
                     fuel = str(raw_input("Does your car have fuel injection? "))
 
-                    if fuel == "y":
+                    if fuel == "Y":
                         print("This issue requires a mechanic. Get it in for service.")
 
-                    elif fuel == "n":
+                    elif fuel == "N":
                         print("The choke may be stuck. Check to ensure choke is opening and closing.")
 
                     else:
                         print("Improper command. Please try again. \n")
                         diagnose_car()
 
-                elif start_die == "n":
+                elif start_die == "N":
                     print("Engine is not getting enough fuel. Clean fuel pump.")
 
                 else:
