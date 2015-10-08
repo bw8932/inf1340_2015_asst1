@@ -23,7 +23,7 @@ def name_that_shape():
 
     Actual Outputs: Error, Pentagon, Decagon, Error
 
-    Errors:
+    Errors: IF USER INPUTS A LETTER OR JUST HITS ENTER
 
     DO WE NEED TO WORRY ABOUT IF THE USER INPUTS A LETTER?
     """
@@ -33,24 +33,31 @@ def name_that_shape():
     #program prints name of shape
     if sides == 3:
         print ("Triangle")
+
     elif sides == 4:
         print ("Quadrangle")
+
     elif sides == 5:
         print ("Pentagon")
+
     elif sides == 6:
         print ("Hexagon")
+
     elif sides == 7:
         print ("Heptagon")
+
     elif sides == 8:
         print ("Octagon")
+
     elif sides == 9:
         print ("Nonagon")
+
     elif sides == 10:
         print ("Decagon")
+
     else:
         print ("Error")
         name_that_shape()
-
 
 
 name_that_shape()

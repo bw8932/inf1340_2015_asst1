@@ -25,10 +25,27 @@ def diagnose_car():
     Errors:
 
     """
-    print("We're so sorry your car isn't working. Help us diagnose the issue - "\
-          "please respond with 'y' for Yes and 'n' for No.")
+    print("We're so sorry your car isn't working. Help us diagnose the issue - "
+          "please respond with 'Y' for Yes and 'N' for No.")
 
-    print("The battery cables may be damaged. Replace cables and try again.")
+    silent = raw_input("Is the car silent when you turn the key?")
+    if silent == "Y":
+
+        corroded = raw_input("Are the battery terminals corroded?")
+        if corroded == "Y":
+            print ("Clean terminals and try starting again.")
+        elif corroded == "N":
+            print ("Replace cables and try again.")
+
+    elif silent == "N":
+
+        click = raw_input("Does the car make a clicking noise?")
+        if click == "Y":
+            print ("Replace the battery.")
+
+    else:
+        print ("Error")
+
 
 
 diagnose_car()
@@ -36,16 +53,18 @@ diagnose_car()
 #first I want to convert standard answers into Boolean operators
 query=str(raw_input("Yes or No? "))
 #uncertain why this works with just one entry but not when adding additional entry of "yes" and "no" fixed
-if query==str("y") or query==str("yes"):
+if query == str("y") or query == str("yes"):
     answer=1
-elif query==str("n") or query==str("no"):
-    answer=0
+elif query == str("n") or query == str("no"):
+    answer = 0
 else:
-    answer=str("Cannot recognize your answer.")
+    answer = str("Error.")
 
 print (answer)
 #Does not refer back to my boolean conversion above. Perhaps this functionality is possible with loops.
 #I suspect for this exercise converting multiple inputs into boolean operators is overcomplicating to no real purpose.
+    #Brady: I think so.  Let's just go with Y or N for simplicity... that seems to be what she was
+    #hinting at with her clarifications posting on blackboard
 query=str(raw_input("Now yes or No? "))
 
 print bool(answer)
