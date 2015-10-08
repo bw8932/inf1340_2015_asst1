@@ -17,16 +17,14 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:  1, 5, 10, 15
+    Inputs:  1, 5, 10, 15, J
 
-    Expected Outputs:  Error, Pentagon, Decagon, Error
+    Expected Outputs:  Error, Pentagon, Decagon, Error,
 
-    Actual Outputs: Error, Pentagon, Decagon, Error
+    Actual Outputs: Error, Pentagon, Decagon, Error, invalid literal
 
-    Errors: IF USER INPUTS A LETTER OR JUST HITS ENTER
+    Errors: None, unless user inputs letter instead of number, when it returns "invalid literal"
 
-    DO WE NEED TO WORRY ABOUT IF THE USER INPUTS A LETTER?
-        I don't think so. This is some nice clean code Brady--great work!
     """
     # user inputs polygon's sides
     sides = int(raw_input("How many sides does the polygon have?"))
