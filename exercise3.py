@@ -26,12 +26,6 @@ def diagnose_car():
 
     """
 
-    # I threw in some spaces to open it up a bit
-    # Looks great, man.
-
-    # Clarify required inputs for the program
-    print("We're so sorry your car isn't working. Help us diagnose the issue - "
-          "please respond with 'Y' for Yes and 'N' for No.")
 
     # Begin nested if statements
     silent = str(raw_input("Is the car silent when you turn the key? "))
@@ -40,10 +34,10 @@ def diagnose_car():
         corroded = str(raw_input("Are the battery terminals corroded? "))
 
         if corroded == "Y":
-            print("The battery terminals may not be conductive. Clean terminals and try starting again.")
+            print("Clean terminals and try starting again.")
 
         elif corroded == "N":
-            print("The battery cables may be damaged. Replace cables and try again.")
+            print("Replace cables and try again.")
 
         # Incorrect entry to restart sequence from the beginning
         else:
@@ -54,13 +48,13 @@ def diagnose_car():
         clicking = str(raw_input("Does the car make a clicking noise? "))
 
         if clicking == "Y":
-            print("The battery is dead. Replace the battery.")
+            print("Replace the battery.")
 
         elif clicking == "N":
             crank = str(raw_input("Does the car crank up but fail to start? "))
 
             if crank == "Y":
-                print("The spark plug may be loose. Check spark plug connections.")
+                print("Check spark plug connections.")
 
             elif crank == "N":
                 start_die = str(raw_input("Does the engine start then die? "))
@@ -69,10 +63,10 @@ def diagnose_car():
                     fuel = str(raw_input("Does your car have fuel injection? "))
 
                     if fuel == "Y":
-                        print("This issue requires a mechanic. Get it in for service.")
+                        print("Get it in for service.")
 
                     elif fuel == "N":
-                        print("The choke may be stuck. Check to ensure choke is opening and closing.")
+                        print("Check to ensure the choke is opening and closing.")
 
                     else:
                         print("Improper command. Please try again. \n")
@@ -97,6 +91,6 @@ def diagnose_car():
             print("Improper command. Please try again. \n")
             diagnose_car()
 
-diagnose_car()
+# diagnose_car()
 
 

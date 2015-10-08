@@ -17,41 +17,44 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:  1, 5, 10, 15
+    Inputs:  1, 5, 10, 15, J
 
-    Expected Outputs:  Error, Pentagon, Decagon, Error
+    Expected Outputs:  Error, Pentagon, Decagon, Error,
 
-    Actual Outputs: Error, Pentagon, Decagon, Error
+    Actual Outputs: Error, Pentagon, Decagon, Error, invalid literal
 
-    Errors:
+    Errors: None, unless user inputs letter instead of number, when it returns "invalid literal"
 
-    DO WE NEED TO WORRY ABOUT IF THE USER INPUTS A LETTER?
-        I don't think so. This is some nice clean code Brady--great work!
     """
     # user inputs polygon's sides
-    sides = int(raw_input("How many sides does the polygon have?"))
+    sides = (raw_input("How many sides does the polygon have?"))
 
     # program prints name of shape
-    if sides == 3:
-        print ("Triangle")
-    elif sides == 4:
-        print ("Quadrangle")
-    elif sides == 5:
-        print ("Pentagon")
-    elif sides == 6:
-        print ("Hexagon")
-    elif sides == 7:
-        print ("Heptagon")
-    elif sides == 8:
-        print ("Octagon")
-    elif sides == 9:
-        print ("Nonagon")
-    elif sides == 10:
-        print ("Decagon")
+    if sides == "3":
+        print ("triangle")
+
+    elif sides == "4":
+        print ("quadrilateral")
+
+    elif sides == "5":
+        print ("pentagon")
+
+    elif sides == "6":
+        print ("hexagon")
+
+    elif sides == "7":
+        print ("heptagon")
+
+    elif sides == "8":
+        print ("octagon")
+
+    elif sides == "9":
+        print ("nonagon")
+
+    elif sides == "10":
+        print ("decagon")
+
     else:
         print ("Error")
-        name_that_shape()
 
-
-
-name_that_shape()
+# name_that_shape()
