@@ -27,36 +27,34 @@ def name_that_shape():
 
     """
     # user inputs polygon's sides
-    sides = int(raw_input("How many sides does the polygon have?"))
+    sides = (raw_input("How many sides does the polygon have?"))
 
     # program prints name of shape
-    if sides == 3:
-        print ("Triangle")
+    if sides == "3":
+        print ("triangle")
 
-    elif sides == 4:
-        print ("Quadrangle")
+    elif sides == "4":
+        print ("quadrilateral")
 
-    elif sides == 5:
-        print ("Pentagon")
+    elif sides == "5":
+        print ("pentagon")
 
-    elif sides == 6:
-        print ("Hexagon")
+    elif sides == "6":
+        print ("hexagon")
 
-    elif sides == 7:
-        print ("Heptagon")
+    elif sides == "7":
+        print ("heptagon")
 
-    elif sides == 8:
-        print ("Octagon")
+    elif sides == "8":
+        print ("octagon")
 
-    elif sides == 9:
-        print ("Nonagon")
+    elif sides == "9":
+        print ("nonagon")
 
-    elif sides == 10:
-        print ("Decagon")
+    elif sides == "10":
+        print ("decagon")
 
     else:
         print ("Error")
-        name_that_shape()
 
-
-name_that_shape()
+# name_that_shape()
