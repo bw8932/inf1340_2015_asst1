@@ -14,8 +14,8 @@ __license__ = "MIT License"
 
 # Test Cases
 # inputs: none
-# expected outputs (compared to calculations with pen and paper):
-# actual outputs:
+# expected outputs (compared to calculations with pen and paper): -25065
+# actual outputs:-25065
 
 def lakshmi():
 

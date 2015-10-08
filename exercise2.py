@@ -17,9 +17,9 @@ def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
 
-    Inputs:  1, 5, 10, 15, J
+    Inputs:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, J
 
-    Expected Outputs:  Error, Pentagon, Decagon, Error,
+    Expected Outputs:  Error, Error, Error, Pentagon, Decagon, Error,
 
     Actual Outputs: Error, Pentagon, Decagon, Error, invalid literal
 
