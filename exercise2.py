@@ -19,9 +19,11 @@ def name_that_shape():
 
     Inputs:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, J
 
-    Expected Outputs:  Error, Error, Error, Pentagon, Decagon, Error,
+    Expected Outputs:  Error, Error, Error, triangle, quadrilateral, pentagon, hexagon,
+     heptagon, octagon, nonagon, decagon, Error, Error
 
-    Actual Outputs: Error, Pentagon, Decagon, Error, invalid literal
+    Actual Outputs: Error, Error, Error, triangle, quadrilateral, pentagon, hexagon,
+     heptagon, octagon, nonagon, decagon, Error, Error
 
     Errors: None, unless user inputs letter instead of number, when it returns "invalid literal"
 
@@ -57,4 +59,4 @@ def name_that_shape():
     else:
         print ("Error")
 
-# name_that_shape()
+name_that_shape()
