@@ -92,4 +92,5 @@ def diagnose_car():
             print("Improper command. Please try again. \n")
             diagnose_car()
 
-diagnose_car()
+#Commented out call on function so test program will work
+# diagnose_car()
