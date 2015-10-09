@@ -18,14 +18,15 @@ def diagnose_car():
     Interactively queries the user with yes/no questions to identify a
     possible issue with a car.
 
-    Inputs: (y,y) (n,n,n,n)
+    Inputs: (Y,Y) (N,N,N,N) (z) (N,N,N,Y) (Y,N) (N,N,Y) (N,N,N,Y,Y)
 
     Expected Outputs: (Clean terminals and try starting again.) (Engine is not getting enough fuel. Clean fuel pump.)
+    (Improper command. Please try again.) (Does your car have fuel injection?) (Replace cables and try again.)
+    (Check spark plug connections.) (Get it in for service.)
 
     Errors:
 
     """
-
 
     # Begin nested if statements
     silent = str(raw_input("Is the car silent when you turn the key? "))
