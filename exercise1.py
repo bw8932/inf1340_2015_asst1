@@ -38,6 +38,5 @@ def lakshmi():
     print money
     print "Lakshmi's investing netted her $%s" % money
 
-#commented out call on function in case it confuses the marking system
-# lakshmi()
+lakshmi()
 
