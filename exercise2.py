@@ -60,4 +60,5 @@ def name_that_shape():
     else:
         print ("Error")
 
-name_that_shape()
+#commented out call on function so test program will work
+#name_that_shape()
