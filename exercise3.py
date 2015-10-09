@@ -24,7 +24,7 @@ def diagnose_car():
     (Improper command. Please try again.) (Does your car have fuel injection?) (Replace cables and try again.)
     (Check spark plug connections.) (Get it in for service.)
 
-    Errors:
+    Errors: None given improper entries restart decision tree.
 
     """
 
